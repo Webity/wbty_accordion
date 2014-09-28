@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_content_wbty_accordion</name>
+	<author>Webity</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>Copyright (C) 2012 Webity. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>david@makethewebwork.com</authorEmail>
+	<authorUrl>www.makethewebwork.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_WBTY_ACCORDION_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="wbty_accordion">wbty_accordion.php</filename>
+		<filename plugin="wbty_accordion">wbty_editor.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<media folder="media" destination="plg_content_wbty_accordion">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_wbty_accordion.ini</language>
+		<language tag="en-GB">en-GB.plg_content_wbty_accordion.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="header_tag" type="list"
+					default="h3"
+					description="PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG"
+					label="PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_LABEL"
+				>
+					<option value="h1">PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_H1</option>
+					<option value="h2">PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_H2</option>
+					<option value="h3">PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_H3</option>
+					<option value="h4">PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_H4</option>
+					<option value="h5">PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_H5</option>
+					<option value="h6">PLG_CONTENT_WBTY_ACCORDION_HEADER_TAG_H6</option>
+				</field>
+				<field name="collapsed" type="list"
+					default="0"
+					description="PLG_CONTENT_WBTY_ACCORDION_COLLAPSED"
+					label="PLG_CONTENT_WBTY_ACCORDION_COLLAPSED_LABEL"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
